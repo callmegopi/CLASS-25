@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.row1,
+.row1 a {
+    color: #C0BAB6;
+    background-color: #333333;
+}
+
+#header,
+#container {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 20px 0;
+}
+
+#header #hgroup {
+    float: left;
+    margin: 0 0 20px 0;
+}
+
+#header #hgroup h1 {
+    font-size: 36px;
+}
+
+#header #hgroup h2 {
+    font-size: 13px;
+}
+
+#header #hgroup h1,
+#header #hgroup h2 {
+    font-weight: normal;
+    text-transform: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+#header nav {
+    display: block;
+    float: right;
+    margin: 10px 0 0 0;
+    padding: 20px 0;
+    color: #C0BAB6;
+    background-color: #232323;
+}
+
+#header nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0 20px;
+}
+
+#header nav li {
+    text-transform: uppercase;
+    margin-right: 25px;
+    list-style: none;
+}
+
+#header nav li a {
+    color: #C0BAB6;
+    background-color: #232323;
+}
+
+#header nav li.last {
+    margin-right: 0;
+}
+
+.row2 {
+    color: #979797;
+    background-color: #FFFFFF;
+}
+
+#container {
+    padding: 30px 0;
+}
+
+#container #shout {
+    padding: 0 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+#container #shout p {
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+#container section {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#container #homepage {
+    display: block;
+    width: 960px;
+    line-height: 1.6em;
+}
+
+#container #homepage #latest {
+    margin-bottom: 50px;
+}
+
+#container #homepage #latest article figure ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#container #homepage #latest article figure ul li {
+    margin-bottom: 20px;
+}
+
+#container #homepage #latest article figure ul li img {
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #D6D6D6;
+}
+
+#container #homepage #latest article figure figcaption {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #DEDEDE;
+    font-weight: bold;
+}
+
+#container #homepage #services .lastbox {
+    display: block;
+}
+
+#container #homepage #gopi #lastrow {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+}
+
+.row2 a {
+    color: #FF9900;
+    background-color: #FFFFFF;
+}
+
+/* .one_quarter {
+    width: 225px;
+} */
+
+#container #homepage #services {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+}
+
+/* #container #homepage #services article {
+    margin-right: 20px;
+} */
+
+#container #homepage #services figure {
+    float: left;
+}
+
+#container #homepage #services strong {
+    float: left;
+    margin: 8px 0 0 10px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#container #homepage #services p {
+    display: block;
+    margin: 0;
+    padding: 5px 0 0 0;
+    clear: both;
+    line-height: 1.6em;
+}
+
+#conatiner #homepage .spacer {
+    display: block;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.more {
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #919191;
+    background-color: #232323;
+}
+
+
+
+
+/* For Mobile Devices */
+@media only screen and (max-width: 426px) {
+
+    #header,
+    #container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #header #hgroup {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #header nav {
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 20px 0;
+        color: #C0BAB6;
+        background-color: #232323;
+        text-align: center;
+    }
+
+    #header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #header nav li {
+        text-transform: uppercase;
+        margin-right: 0;
+        list-style: none;
+    }
+
+    #header nav li.last {
+        margin-right: 0;
+    }
+
+    #container #homepage {
+        display: block;
+        width: 100%;
+        line-height: 1.6em;
+    }
+
+    #container #homepage #latest article figure ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #container #homepage #latest article figure figcaption {
+        text-align: center;
+    }
+
+    #container #homepage #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container #homepage #services .one_quarter {
+        display: block;
+        width: 90%;
+    }
+
+    #container #homepage #gopi #lastrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #container #homepage #services .lastbox {
+        display: block;
+        overflow: auto;
+        margin: 0 20px 0 0;
+    }
+
+    #container #homepage #gopi #lastrow .one_quarter {
+        width: 90%;
+        margin: 0 20px 0 0;
+    }
+}
+
+/* for Tablet devices  */
+@media only screen and (max-width: 768px) {
+
+    #header,
+    #container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .clear {
+        overflow: auto;
+    }
+
+    #container #homepage {
+        display: block;
+        width: 100%;
+        line-height: 1.6em;
+    }
+
+    #container #shout {
+        width: 100%;
+        padding: 0 0 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    #container #homepage #latest article figure ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #container #homepage #latest article figure ul li img {
+        width: 75%;
+        padding: 4px;
+        text-align: center;
+        border: 1px solid #D6D6D6;
+    }
+}
